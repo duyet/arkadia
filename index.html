@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Arkadia by Sophia Schomberg and Nikolaus Baumgarten</title>
+	<meta name="keywords" content="arkadia, painting, Sophia Schomberg, Nikolaus Baumgarten, zoomquilt, infinite zoom, botanical, garden, secret garden, hortus conclusus, psychedelic, trippy">
+	<meta name="description" content="Journey through an infinitely zooming floral landscape painting.">
+	<meta property="og:title" content="Arkadia" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://arkadia.duyetdev.com" />
+	<meta property="og:image" content="https://arkadia.duyetdev.com/arkadiapreview.jpg">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" type="text/css" media="all" href="zoom.css" />
+</head>
+<body>
+	<div id="nav">
+		<div class="buttons">
+			<div class="credits">
+				<img src="logo.png" alt="Arkadia" class="logo filtered">
+				<p class="selectable">
+				by Sophia Schomberg<br>
+				and <a href="http://nikkki.net" title="http://nikkki.net" target="_blank">Nikolaus Baumgarten</a><br> 
+				</p>
+				<p class="selectable">
+				2015</p>
+				<p class="selectable">
+				
+				</p>
+				<div class="icon speed" title="fast backward" id="rr"></div>
+				<div class="icon speed" title="backward" id="r"></div>
+				<div class="icon speed" title="pause" id="p"></div>
+				<div class="icon speed" title="forward" id="f"></div>
+				<div class="icon speed" title="fast forward" id="ff"></div>
+				<br>
+				<em class="keyboard">use the arrow keys to navigate<br>
+				spacebar to pause</em>
+			</div>
+			<div class="settings">
+				<div class="button fx" alt="unfiltered" id="nofx">unfiltered</div>
+				<div class="button fx" alt="color" id="color">color</div>
+				<div class="button fx" alt="sw" id="sw">sw</div>
+				<br>
+				<div class="icon speed" id="rr"></div>
+				<div class="icon speed" id="r"></div>
+				<div class="icon speed" id="p"></div>
+				<div class="icon speed" id="f"></div>
+				<div class="icon speed" id="ff"></div>
+			</div><br>
+			<div class="icon" title="info" id="info"></div>
+			<!-- <div class="icon" alt="settings" id="settings"></div> -->
+			<div class="icon" title="toggle fullscreen" id="fullscreen"></div>
+		</div>
+		<div class="seekbar">
+			<div class="seekbar-visible">
+				<div class="marker"></div>
+			</div>
+		</div>
+		<canvas id="preview" class="filtered" width="0" height="0"></canvas>
+	</div>
+	<div id="loading">
+		<img src="logo.png" id="logo" class="filtered">
+		<div id='status' class="filtered">
+			<div id='loadbar'></div>
+		</div>
+	</div>
+	<canvas id="zc" class="filtered" width="0" height="0">Your need a Browser with Canvas support to view this </canvas>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="zoom.js" type="text/javascript"></script>
+</body>
+</html>
